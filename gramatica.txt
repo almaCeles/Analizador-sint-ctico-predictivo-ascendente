@@ -1,0 +1,50 @@
+
+programa -> bloque .
+bloque -> { decls instrs } .
+decls -> decls decl .
+decls -> .
+decl-> tipo id ; . 
+tipo -> tipo [ num ]  .
+tipo -> basico .
+basico -> int .
+basico -> float .
+basico -> char .
+basico -> boolean .
+instrs -> instrs  instr .
+instrs -> .
+instr -> loc = bool ;  .
+instr -> if ( bool ) instr .
+instr -> if ( bool ) instr else instr .
+instr -> while ( bool ) instr .
+instr -> do instr while ( bool ) ;  .
+instr -> break ; .
+instr -> bloque . 
+loc -> loc [ bool ] .
+loc -> id .
+bool -> bool or comb .
+bool -> comb .
+comb -> comb && igualdad .
+comb -> igualdad .
+igualdad -> igualdad == rel .
+igualdad -> igualdad != rel .
+igualdad ->  rel .
+rel -> rel  < expr  .
+rel -> rel  > expr .
+rel -> rel  <= expr  .
+rel -> rel  >= expr .
+rel ->  expr .
+expr -> expr + term .
+expr -> expr - term .
+expr -> term .
+term -> term * unario .
+term -> term / unario .
+term -> unario .
+unario -> ! unario .
+unario -> - unario .
+unario -> factor .
+factor -> ( bool ) .
+factor -> loc .
+factor -> num .
+factor -> real .
+factor -> true .
+factor -> false .
