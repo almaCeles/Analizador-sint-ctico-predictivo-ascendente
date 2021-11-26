@@ -47,7 +47,6 @@ public class main {
         corrida2();
         
         listt.impresion();
-        System.out.println("succesful");
         
         
     }
@@ -131,8 +130,8 @@ public class main {
                         token = lexer.yylex();
 			break;
 		case 11112: //11112  error
-                    listt.impresion();
-                    System.out.println("Error");
+                    //listt.impresion();
+                    System.out.println("---------------------Error-----------------------------");
 			return;
 		case 11113: //11113 acept
 			while (!listt.getPilaa().empty()) {
