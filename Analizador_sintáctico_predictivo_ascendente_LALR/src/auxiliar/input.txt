@@ -1,3 +1,1 @@
-{
-   5+9;
-}
+{ int [10] a ; float b ; if(a[2] == b) if(b<3+2) a[2]=b*2; else b=3; }

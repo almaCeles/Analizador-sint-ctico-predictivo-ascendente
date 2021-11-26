@@ -18,13 +18,13 @@ import java.util.logging.Logger;
  * @author celes
  */
 public class leerArchivo {
-     FileReader archivo = null;
+    // FileReader archivo = null;
     public String lArchivo() {
          String ST = "";
         try {
-            archivo = new FileReader("D:\\documentos\\Tecnologico\\9\\automatas\\Analizador-sint-ctico-predictivo-ascendente\\Analizador_sintáctico_predictivo_ascendente_LALR\\src\\auxiliar\\input.txt");
-            
-             ST = new String(Files.readAllBytes((Path) archivo));
+             Path archivo = Path.of("D:\\documentos\\Tecnologico\\9\\automatas\\Analizador-sint-ctico-predictivo-ascendente\\Analizador_sintáctico_predictivo_ascendente_LALR\\src\\auxiliar\\input.txt");
+             ST = new String(Files.readAllBytes(archivo));
+            // System.out.println(ST);
             return ST;
         } catch (FileNotFoundException ex) {
             Logger.getLogger(leerArchivo.class.getName()).log(Level.SEVERE, null, ex);
@@ -33,4 +33,6 @@ public class leerArchivo {
         }
          return ST;
     }
+
+   
 }

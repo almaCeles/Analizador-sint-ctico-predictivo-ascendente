@@ -3,6 +3,9 @@ import static  lexico.Token.*;
 %%
 %class NewLexer
 %type Token
+%eofval{
+{return _fin;}
+%eofval}
 
 white=[ \t\r\n]+
 digito =[0-9]
@@ -18,10 +21,11 @@ ID=[A-Za-z]+["_"0-9A-Za-z]*
 
 {white} {/*Ignore*/}
 
+
 "int"       {return iint;}
-"flotante"  {return ffloat;}
+"float"  {return ffloat;}
 "char"      {return cchar;}
-"bolean"    {return bbolean;}
+"boolean"    {return bbolean;}
 
 ";" { return puntoYcoma;}
 "(" { return parentisiIzq;}
@@ -35,13 +39,14 @@ ID=[A-Za-z]+["_"0-9A-Za-z]*
 "*" { return multiplicacion;}
 "/" { return divicion;}
 "!" { return admiracion;} 
-"&&" { return igualIgual;} 
+"&&" { return iss;} 
 "<" { return menorque;}
 ">" { return mayorque;}
 "=" { return igual;}
 "<="        { return menorIgual;}
 ">="	    { return mayorIgual;}
 ")"	    { return parD;}
+"=="        { return igualIgual;}
 "*"	    {return multiplicacion;}
 "true"      {return ttrue;}
 "false"     {return ffalse;}
