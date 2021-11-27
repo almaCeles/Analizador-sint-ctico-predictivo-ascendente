@@ -39,7 +39,7 @@ public class controlador {
 		 case 5: numeroPop = 1;  Accion = 42; break;
                  case 6: numeroPop = 4;  Accion = 37; break;
                  case 7: numeroPop = 2;  Accion = 39; break;
-                 case 8: numeroPop = 1;  Accion = 39; break;
+                 case 8: numeroPop = 1;  Accion = 43; break;
                  case 9: numeroPop=  1;  Accion = 44; break;
 		 case 10: numeroPop = 1;  Accion = 43; break;
 		 case 11: numeroPop = 3;  Accion = 40; break;
@@ -1191,7 +1191,7 @@ public class controlador {
     //34
    
      relacion[34][21]=56;
-     relacion[34]   [22]=57;
+     relacion[34][22]=57;
     
     //35
    

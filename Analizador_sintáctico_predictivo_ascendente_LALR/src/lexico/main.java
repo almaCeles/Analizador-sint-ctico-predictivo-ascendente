@@ -109,15 +109,15 @@ public class main {
          int op = 0;
         do {
                 int ultimoEle = (int) listt.getPilaa().lastElement();
-              // System.out.println("Ultimo elemento: " +ultimoEle); 
+              System.out.println("Ultimo elemento: " +ultimoEle); 
                 con.indice(token);
-               // System.out.println("El token es: " + token);
-              //System.out.println("indice: " + indi);
+                System.out.println("El token es: " + token);
+              System.out.println("indice: " + indi);
 	        
                  op = (int) con.T(ultimoEle, indi).get(0);
                 
              
-            //   System.out.println(con.T(ultimoEle, indi).get(1)+"------accion----------"); 
+               System.out.println(con.T(ultimoEle, indi).get(1)+"------accion----------"); 
                 recorrido();
                 LlenarPila(token, ultimoEle);
 		switch (op) 

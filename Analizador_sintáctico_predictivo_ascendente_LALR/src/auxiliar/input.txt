@@ -1,1 +1,23 @@
-{ int [10] a ; float b ; if(a[2] == b) if(b<3+2) a[2]=b*2; else b=3; }
+{
+ int a;
+ float b;
+ boolean c;
+
+  int [10] d ;
+   
+  
+   
+   if(b<3+2) a[2]=b*2; else b=3;
+   b=25.65;
+   a=44;
+   c=false;
+   
+
+   do{
+       int [10] d ;
+    }while(b<3+2);
+
+   
+    
+    
+ }
